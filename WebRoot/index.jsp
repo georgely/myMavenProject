@@ -70,32 +70,32 @@
 					<h3 class="panel-title">Contact Form</h3>
 				</div>
 				<div class="panel-body">
-					<form class="form-horizontal" onSubmit="return beforeSubmit(this)" id="contactform" method="post" action="" role="form" >
+					<form class="form-horizontal" onSubmit="return beforeSubmit(this)" id="contactform" method="post" action="test.action" role="form" >
 						  <div class="form-group">
 								<label for="contactname" class="col-sm-2 control-label">Name</label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control" id="contactname"  placeholder="Enter Name">
+									<input type="text" class="form-control" id="contactname" name="information.name"  placeholder="Enter Name">
 									<!--<span id="helpBlock" class="help-block">Please enter your first and last name</span -->								</div>
 						  </div>
 
 						  <div class="form-group">
 							    <label for="contactemail" class="col-sm-2 control-label">Email address</label>
 							    <div class="col-sm-10">
-							    	<input type="email" class="form-control" id="contactemail" placeholder="Enter email">
+							    	<input type="email" class="form-control" id="contactemail" name="information.email" placeholder="Enter email">
 								</div>
 						  </div>
 
 						   <div class="form-group">
 								<label for="contactaddress1" class="col-sm-2 control-label">Address1</label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control" id="contactaddress1"  placeholder="Enter Address">
+									<input type="text" class="form-control" id="contactaddress1" name="information.address1" placeholder="Enter Address">
 								</div>
 						  </div>
 
 						  <div class="form-group">
 								<label for="contactaddress2" class="col-sm-2 control-label">Address2</label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control" id="contactaddress2"  placeholder="Enter Address">
+									<input type="text" class="form-control" id="contactaddress2" name="information.address2" placeholder="Enter Address">
 								</div>
 						  </div>
 
@@ -104,28 +104,28 @@
 						  <div class="form-group">
 								<label for="contactcity" class="col-sm-2 control-label">City</label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control" id="contactcity"  placeholder="Enter City">
+									<input type="text" class="form-control" id="contactcity" name="information.city" placeholder="Enter City">
 								</div>
 						  </div>
 
 						  <div class="form-group">
 								<label for="contactstate" class="col-sm-2 control-label">State</label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control" id="contactstate"  placeholder="Enter State">
+									<input type="text" class="form-control" id="contactstate" name="information.state"  placeholder="Enter State">
 								</div>
 						  </div>
 
 						  <div class="form-group">
 								<label for="contactzip" class="col-sm-2 control-label">Zip Code</label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control" id="contactzip"  placeholder="Enter Zip">
+									<input type="text" class="form-control" id="contactzip" name="information.zipcode"  placeholder="Enter Zip">
 								</div>
 						  </div>
 
 						  <div class="form-group">
 								<label for="contactcountry" class="col-sm-2 control-label">Country</label>
 								<div class="col-sm-10">
-									<input type="text" class="form-control" id="contactcountry"  placeholder="Enter Country">
+									<input type="text" class="form-control" id="contactcountry" name="information.country"  placeholder="Enter Country">
 								</div>
 						  </div>
 
@@ -133,7 +133,7 @@
 						  <div class="form-group">
 						  		<label for="contactmessage" class="col-sm-2 control-label">Message</label>
 						  		<div class="col-sm-10">
-						  			<textarea class="form-control" id="contactmessage" rows="6"></textarea>
+						  			<textarea class="form-control" id="contactmessage" name="information.message"  rows="6"></textarea>
 						  		</div>
 						  </div>
 
@@ -166,7 +166,7 @@
 <script>
 	function validateText (id) {
 		// body...
-		if($("#"+id).val()==null || $("#"+id).val()=="")
+/*  		if($("#"+id).val()==null || $("#"+id).val()=="")
 		{
 			var div = $("#"+id).closest("div");
 			$("#glypcn"+id).remove();
@@ -182,8 +182,8 @@
 			$("#glypcn"+id).remove();
 			div.append('<span id="glypcn'+id+'" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>');
 			return true;
-		}
-		
+		}  */
+		return true;
 	}
 
 	$(document).ready(
