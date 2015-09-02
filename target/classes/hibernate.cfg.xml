@@ -13,12 +13,13 @@
 	<property name="dialect">
 		org.hibernate.dialect.MySQL5InnoDBDialect
 	</property>
-
-	<!--
-		<property name="connection.driver_class">com.jdbc.mysql.Driver</property>
-		<property name="connection.url">jdbc:mysql:///LYOA</property>
+	
+ 	<property name="current_session_context_class">thread</property> 
+	
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql:///oadb</property>
 		<property name="connection.username">root</property>
-		<property name="connection.password"></property> -->
+		<property name="connection.password"></property>
 
 	<!-- 2.other setting -->
 
@@ -29,7 +30,9 @@
 
 	<!-- 3. mapping setting -->
 	<mapping resource="cn/itcast/oa/domain/User.hbm.xml" />
+	<mapping resource="cn/itcast/oa/domain/Role.hbm.xml" />
 	<mapping resource="cn/itcast/oa/domain/Information.hbm.xml" />
+	
 
 </session-factory>
 </hibernate-configuration>

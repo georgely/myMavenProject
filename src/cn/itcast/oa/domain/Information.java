@@ -8,7 +8,7 @@ public class Information {
 	private String address2;
 	private String city;
 	private String state;
-	private Long zipcode;
+	private String zipcode;
 	private String country;
 	private String message;
 
@@ -68,11 +68,11 @@ public class Information {
 		this.state = state;
 	}
 
-	public Long getZipcode() {
+	public String getZipcode() {
 		return zipcode;
 	}
 
-	public void setZipcode(Long zipcode) {
+	public void setZipcode(String zipcode) {
 		this.zipcode = zipcode;
 	}
 
@@ -90,13 +90,13 @@ public class Information {
 
 	public void setMessage(String message) {
 		this.message = message;
-	}
+	} 
 
 	@Override
 	public String toString() {
 		return "Information [id=" + id + ", name=" + name + ", email=" + email
 				+ ", address1=" + address1 + ", address2=" + address2
 				+ ", city=" + city + ", state=" + state + ", zipcode=" + zipcode
-				+ ", country=" + country + ", message=" + message + "]";
+				+ ", country=" + country + ", message=" + message + "]"; 
 	}
 }

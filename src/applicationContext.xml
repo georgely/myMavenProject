@@ -8,8 +8,13 @@
 
 
 	<!-- 自动扫描装配bean -->
+<<<<<<< Updated upstream
 	<context:component-scan base-package="cn.itcast.oa"></context:component-scan>
 
+=======
+	<context:component-scan base-package="cn.itcast.oa, com.lob.examples"></context:component-scan>
+	
+>>>>>>> Stashed changes
 	<!-- 配置外部的properties -->
 	<context:property-placeholder location="classpath:jdbc.properties" />
 

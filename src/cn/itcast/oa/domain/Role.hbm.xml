@@ -5,20 +5,12 @@
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
 <hibernate-mapping package="cn.itcast.oa.domain">
 
-    <class name="Information" table="info">
+    <class name="Role" table="role">
         <id name="id">
             <generator class="native"/>
         </id>
         <property name="name"/>
-        <property name="email"/>
-        <property name="address1"/>
-        <property name="address2"/>
-        <property name="city"/>
-        <property name="state"/>
-        <property name="zipcode"/>
-        <property name="country"/>
-        <property name="message"/>
-        
+        <property name="description"/>
         
     </class>
 

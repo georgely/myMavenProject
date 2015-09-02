@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import cn.itcast.oa.domain.Information;
 import cn.itcast.oa.domain.User;
+import cn.itcast.oa.domain.Information;
 
 @Service("testService")
 public class TestService {
@@ -28,5 +29,11 @@ public class TestService {
 	public void save(Information information){
 		Session session = sessionFactory.getCurrentSession();
 		session.save(information);
+	}
+	
+	@Transactional
+	public void saveInformation() {
+		Session session = sessionFactory.getCurrentSession();
+		session.save(new Information());
 	}
 }
