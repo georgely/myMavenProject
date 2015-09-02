@@ -11,6 +11,9 @@ import org.hibernate.SessionFactory;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import cn.itcast.oa.domain.Information;
+
 import org.junit.Test;
 
 //import com.opensymphony.xwork2.security.AcceptedPatternsChecker;
@@ -35,6 +38,8 @@ public class SpringTest {
 	@Test
 	public void testTransaction() throws Exception {
 		TestService testService = (TestService)ac.getBean("testService");
-		testService.saveTwoUsers();
+		Information information = new Information();
+		information.setName("teststests");
+		testService.save(information);
 	}
 }

@@ -1,25 +1,22 @@
-<?xml version="1.0"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-mapping PUBLIC
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
-<hibernate-mapping package="cn.itcast.oa.domain">
-
-    <class name="Information" table="information">
-        <id name="id">
-            <generator class="native"/>
-        </id>
-        <property name="name"/>
-        <property name="email"/>
-        <property name="address1"/>
-        <property name="address2"/>
-        <property name="city"/>
-        <property name="state"/>
-        <property name="zipcode"/>
-        <property name="country"/>
-        <property name="massage"/>
-        
-    </class>
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.itcast.oa.domain.Information" table="information">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name" />
+		<property name="email" />
+		<property name="address1" />
+		<property name="address2" />
+		<property name="city" />
+		<property name="state" />
+		<property name="zipcode" />
+		<property name="country" />
+		<property name="message" />
+	</class>
 
 </hibernate-mapping>
 
